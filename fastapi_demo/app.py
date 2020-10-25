@@ -34,7 +34,7 @@ def update_item(item_id: int, item: Item):
     return {"item_name": item.name, "item_id": item_id}
 
 
-@app.put("/items/{item_id}")
+@app.delete("/items/{item_id}")
 def delete_item(item_id: int):
     # Delete item from db
     return {"msg": f"Item {item_id} has been deleted"}
